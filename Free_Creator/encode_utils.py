@@ -1,6 +1,7 @@
 # encode_utils.py
 
 # 定义数字到字符的映射表
+# 其实跟遗产的明码存储没什么区别
 digit_to_char = {
     '0': 'Z',
     '1': '4',
@@ -16,7 +17,7 @@ digit_to_char = {
 
 def encode_number(number_str):
     """
-    将17位数字ID转换为自定义编码格式的字符串。
+    将Steam64ID转换为适用于游戏存档的自定义编码格式的字符串。
     """
     encoded = []
     for digit in number_str:
